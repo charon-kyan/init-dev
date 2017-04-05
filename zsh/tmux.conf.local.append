@@ -1,0 +1,14 @@
+##### self confg #####
+
+# move around panes with hjkl, as one would in vim after pressing ctrl-w
+bind -nc C-h select-pane -L
+bind -nc C-j select-pane -D
+bind -nc C-k select-pane -U
+# bind -nc C-l select-pane -R
+
+bind -nc M-j previous-window
+bind -nc M-k next-window
+
+# Shift arrow to switch windows
+bind -n S-Left  previous-window
+bind -n S-Right next-window
