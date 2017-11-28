@@ -40,10 +40,19 @@ curl https://bintray.com/sbt/rpm/rpm | tee /etc/yum.repos.d/bintray-sbt-rpm.repo
     yum install -y sbt
 
 
+## Go
+
+brew install -y go
+
+## Nodejs
+brew install -y node
+
+
 ## vim
 brew install -y vim --with-lua
 curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
 cat ./zsh/vimrc.local.append >> $HOME/.vimrc.local
+cat ./zsh/vimrc.bundles.local.append >> $HOME/.vimrc.bundles.local
 
 
 ## tmux
@@ -62,5 +71,9 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 ## tools
 brew install -y tree htop peco psmisc gitflow
 
-brew cask install -y macvim iterm2 alfred
+brew cask install -y iterm2 alfred karabiner seil
+
+brew cask install -y sublime-text sourcetree mou
+
+brew cask install -y intellij-idea-ce
 
