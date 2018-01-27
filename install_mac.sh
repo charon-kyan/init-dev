@@ -1,7 +1,9 @@
 #!/bin/bash
 
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
 ## base
-brew install -y epel-release wget git make cmake gcc zip unzip
+brew install -y wget git make cmake gcc zip unzip
 
 BASHRC=$HOME/.profile.local
 RUN cp -f ./zsh/profile.local $BASHRC
@@ -76,4 +78,6 @@ brew cask install -y iterm2 alfred karabiner seil
 brew cask install -y sublime-text sourcetree mou
 
 brew cask install -y intellij-idea-ce
+
+brew cask install -y visual-studio-code
 
